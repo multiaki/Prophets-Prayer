@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="container">
+		<ImageView id="logo" onClick="doClick"/>
+		<Label class="header">Hello</Label>
+	</View>
+</Alloy>
