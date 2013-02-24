@@ -1,10 +1,10 @@
 ".container": {
-	backgroundColor:"white"
+	backgroundColor:"white",
 },
 "Label": {
 	color: "#000"
 },
 "#logo":{
-	image:"../../images/logo-sm.png",
+	image:"images/logo-sm.png",
 	top:5
 }

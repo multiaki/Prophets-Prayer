@@ -11,7 +11,7 @@ function Controller() {
     });
     $.addTopLevelView($.__views.index);
     $.__views.logo = Ti.UI.createImageView({
-        image: "../../images/logo-sm.png",
+        image: "images/logo-sm.png",
         top: 5,
         id: "logo"
     });
