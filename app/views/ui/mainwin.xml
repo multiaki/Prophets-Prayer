@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+		<ImageView id="logo" />
+		<Label class="header">Hello</Label>
+	</Window>
+</Alloy>
