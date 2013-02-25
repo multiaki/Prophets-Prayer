@@ -19,19 +19,17 @@ function Controller() {
 	
 
 	// Generated UI code
-	$.__views.index = Ti.UI.createWindow(
-{backgroundColor:"white",id:"index",}
+	$.__views.mainwin = Ti.UI.createView(
+{backgroundColor:"white",id:"mainwin",}
 );
-$.addTopLevelView($.__views.index);$.__views.logo = Ti.UI.createImageView(
-{image:"images/logo-sm.png",top:5,id:"logo",}
+$.addTopLevelView($.__views.mainwin);$.__views.logo = Ti.UI.createImageView(
+{id:"logo",}
 );
-$.__views.index.add($.__views.logo);
-$.__views.__alloyId1 = Ti.UI.createLabel(
-{color:"#000",text:'Hello',id:"__alloyId1",}
+$.__views.mainwin.add($.__views.logo);
+doClick?$.__views.logo.addEventListener('click',doClick):__defers['$.__views.logo!click!doClick']=true;$.__views.__alloyId3 = Ti.UI.createLabel(
+{text:'Hello',id:"__alloyId3",}
 );
-$.__views.index.add($.__views.__alloyId1);
-$.__views.__alloyId2 = Alloy.createController('ui/mainwin',{id:"__alloyId2",});
-$.__views.__alloyId2.setParent($.__views.index);
+$.__views.mainwin.add($.__views.__alloyId3);
 exports.destroy=function(){};
 
 	// make all IDed elements in $.__views available right on the $ in a 
@@ -40,13 +38,13 @@ exports.destroy=function(){};
 	_.extend($, $.__views);
 
 	// Controller code directly from the developer's controller file
-	$.index.open()
+	function doClick(e){console.log(e)}
 
 	// Generated code that must be executed after all UI and
 	// controller code. One example deferred event handlers whose
 	// functions are not defined until after the controller code
 	// is executed.
-	
+	__defers['$.__views.logo!click!doClick'] && $.__views.logo.addEventListener('click',doClick);
 
 	// Extend the $ instance with all functions and properties 
 	// defined on the exports object.
