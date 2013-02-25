@@ -1,7 +1,5 @@
 <Alloy>
 	<Window class="container">
-			<ImageView id="logo" />
-		<Label class="header">Hello</Label>
-		<Require src="ui/mainwin" type="view"></Require>
+		<ImageView id="logo" image="logo-sm.png"/>
 	</Window>
 </Alloy>

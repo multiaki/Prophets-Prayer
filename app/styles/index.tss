@@ -5,6 +5,5 @@
 	color: "#000"
 },
 "#logo":{
-	image:"images/logo-sm.png",
 	top:5
 }
